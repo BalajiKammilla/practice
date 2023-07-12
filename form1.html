@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 style="border: 2px solid red;">REGISTRATION</h1><br>
+        <form action="/api" method="post">
+            <label>firstname :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="firstname" placeholder="enter full name"><br><br>
+            <br>  
+            <label>lastname :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lastname"     placeholder="enter full name"><br><br>
+            <br>  
+            <input type="button" name="submit" value="submit" onclick="showAlert()">
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    function showAlert(){
+
+      var firstname=document.getElementById('firstname').value;
+      var lastname=document.getElementById('lastname').value;
+      var lastname2='balu'
+
+      if(lastname2==lastname){
+
+        alert('Your FullName :');
+
+      alert(lastname +" "+ firstname);
+      }
+      else{
+        alert('wrong last name');
+      }
+      
+    //   alert('firstnme :'+firstname + '\nlastname :'+lastname);
+        }
+ </script>
+</body>
+</html>

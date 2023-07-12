@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+</head>
+<body>
+    <fieldset>
+        <Legend style="text-align: center;">REGISTER</Legend>
+    <form> 
+        <label for="name">Name :</label>
+        <input type="text" name="name" required>
+        <br><br>
+       
+        <label for="name">Email :</label>
+        <input type="text" name="Email" required>
+        <br><br \>
+    
+        <label>College :
+              <select name="College">
+                <option>Select</option>
+                <option>ACEM</option>
+                <option>VISWAM</option>
+                <option>MITS</option>
+                <option>GVIC</option>
+            </select>
+        </label> <br>
+        <br>
+        <label for="Gender">Gender :</label> 
+        <select name="Gender">
+        <input type="radio" name="male">male
+        <input type="radio" name="female">Female
+    </select>
+    </div>
+    <br><br>
+    <label>Upload File :</label>
+    <input type="file" name="file" >
+    <br><br>
+
+    <label for="Skills">Skills :<label>
+        <select name="Skills">
+        <input type="checkbox">Java
+        <input type="checkbox">Python
+        <input type="checkbox">Html
+        <input type="checkbox">Css
+        <input type="checkbox">JavaScript
+        <input type="checkbox">Sql
+    </select>
+
+<br><br>
+
+    <input type="submit" name="submit" value="SUBMIT" onclick="showAlert()">
+    </form>
+</fieldset>
+<script>
+
+    fun showAlert(){
+
+        var name=document.getElementById('name').value;
+        var Email=document.getElementById('Email').value;
+        var College=document.getElementById('College').value;
+        var Gender=document.getElementById('Gender').value;
+        var Skills=document.getElementById('Skills').value;
+
+        alert('name :'+name + '\n Email :'+Email + '\n college :'+College+ '\n Gender :'+Gender+ '\n Skills :'+Skills)
+
+
+    }
+</script>
+    
+</body>
+</html>
