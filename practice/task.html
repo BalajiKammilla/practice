@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mobile</title>
+</head>
+<body>
+<form action="/mobiles/formpost" method="post">
+    <label>id :</label>
+    <input type="number" id="id" name="id" required>
+    <br><br>
+    <label>name :</label>
+    <input type="text" id="name" name="name" required>
+<br><br>
+    <label>price :</label>
+    <input type="text" id="price" name="price" required>
+<br><br>
+    <input type="submit" id="submit" name="submit" value="SUBMIT" onclick="showAlert()">
+
+</form>
+<br>
+<br>
+<form action="/mobiles/get" method="get">
+    <label></label>
+    <input type="submit" id="submit1" name="submit" value="GETALL">
+    <br><br>
+
+</form>
+</body>
+<script>
+    function showAlert(){
+    var id=document.getElementById('id').value;
+    var name=document.getElementById('name').value;
+    var price=document.getElementById('price').value;
+
+    alert(' id :'+id +'\n name :'+name +'\n price :'+price +'\n \n \n THANK YOU')
+    console.log("saved");
+    }
+</script>
+</html>
